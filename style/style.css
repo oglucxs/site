@@ -62,14 +62,14 @@ nav ul li a.active {
 }
 
 .thumbnail {
-    background-color: #4d4d4d;
+    
     width: 100%; /* A thumbnail ocupa toda a largura do contêiner */
     height: 300px; /* Aumenta a altura da thumbnail */
 }
 
 .thumbnail img {
-    width: 70%; /* Reduz a largura da imagem para 70% da largura da thumbnail */
-    height: 100%; /* A imagem ocupa toda a altura da thumbnail */
+    width: 60%;
+    height: 120%;
     object-fit: cover; /* Corta ou ajusta a imagem para cobrir a thumbnail */
     border-radius: 4px; /* Adiciona cantos arredondados */
 }
@@ -80,14 +80,15 @@ nav ul li a.active {
 
 .description h3 {
     font-size: 18px;
-    margin: 0;
+    margin: 41px;
     font-weight: bold;
+    color: #ffffff; 
 }
 
 .description p {
     font-size: 14px;
     margin: 5px 0 0;
-    line-height: 1.5;
+    line-height: 0.5;
 }
 
 
@@ -102,14 +103,20 @@ nav ul li a.active {
 
 .image {
     background-color: #4d4d4d;
-    width: 30%;
-    height: 150px;
+    width: 20%; /* Mantém a largura do contêiner em 30% */
+    height: auto; /* Deixa a altura da imagem dinâmica para se ajustar */
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
-    font-weight: bold;
+    overflow: hidden; /* Esconde o excesso da imagem que sair da área */
 }
+
+.image img {
+    width: 100%; /* A imagem preenche toda a largura do contêiner */
+    height: auto; /* Mantém as proporções da imagem */
+    object-fit: cover; /* Corta a imagem proporcionalmente para preencher o contêiner sem distorção */
+}
+
 
 .text {
     margin-left: 20px;
