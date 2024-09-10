@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0ece7;
+}
+
+header {
+    background-color: #330a04;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+#Conteudo {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f0ece7;
+    font-weight: bold;
+}
+
+nav ul li a.active {
+    background-color:#efac41;
+    color: #330a04;
+    padding: 5px 10px;
+}
+
+.main-banner {
+    background-image: url("../images/banner.png");
+    background-size: cover; /* Faz com que a imagem cubra completamente a área do banner sem distorção */
+    background-position: center; /* Centraliza a imagem no banner */
+    background-repeat: no-repeat; /* Garante que a imagem não se repita */
+    height: 55vh; /* Altura do banner */
+    width: 100%; /* Largura total do banner */
+}
+
+.thumbnails {
+    display: flex;
+    justify-content: space-around; /* Distribui as thumbnails com espaço ao redor */
+    margin: 20px 0;
+}
+
+.thumbnail-container {
+    width: 30%; /* Cada thumbnail-container ocupará 30% da largura do contêiner */
+    text-align: center; /* Centraliza o texto da descrição */
+}
+
+.thumbnail {
+    background-color: #4d4d4d;
+    width: 100%; /* A thumbnail ocupa toda a largura do contêiner */
+    height: 300px; /* Aumenta a altura da thumbnail */
+}
+
+.thumbnail img {
+    width: 70%; /* Reduz a largura da imagem para 70% da largura da thumbnail */
+    height: 100%; /* A imagem ocupa toda a altura da thumbnail */
+    object-fit: cover; /* Corta ou ajusta a imagem para cobrir a thumbnail */
+    border-radius: 4px; /* Adiciona cantos arredondados */
+}
+
+.description {
+    margin-top: 10px; /* Adiciona um espaçamento entre a imagem e a descrição */
+}
+
+.description h3 {
+    font-size: 18px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.description p {
+    font-size: 14px;
+    margin: 5px 0 0;
+    line-height: 1.5;
+}
+
+
+
+
+
+.content {
+    display: flex;
+    padding: 20px;
+    background-color: #b32900;
+}
+
+.image {
+    background-color: #4d4d4d;
+    width: 30%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+}
+
+.text {
+    margin-left: 20px;
+}
+
+footer {
+    background-color: #330a04;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 5px 0;
+}
