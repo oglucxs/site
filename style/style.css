@@ -168,7 +168,23 @@ footer p {
       font-size: 1.1rem;
       /* Tamanho da fonte dos títulos em telas pequenas */
     }
-  
+    .main-banner{
+        height: 145px;
+    }
+    .thumbnail img {
+        width: 100%;
+    }
+    .image img  {
+        width: 150px;
+        height: auto;
+        position: relative;
+        float: left;
+        background-color: transparent;
+    }
+    .image {
+        width: 50%;
+        display: contents;
+    }
     footer {
       font-size: 0.9rem;
       /* Tamanho da fonte do rodapé em telas pequenas */
